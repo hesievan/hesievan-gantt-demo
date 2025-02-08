@@ -1,0 +1,38 @@
+/* ... existing code ... */
+
+.gantt-container {
+  /* ... existing code ... */
+  --row-height: 40px;
+  --bar-color: #3498db;
+  --bar-background: #ebf5fb;
+  --milestone-color: #e74c3c;
+  --text-color: #2c3e50;
+  --border-color: #bdc3c7;
+}
+
+.gantt-task-row {
+  /* ... existing code ... */
+  border-bottom: 1px solid var(--border-color);
+}
+
+.gantt-task-info {
+  /* ... existing code ... */
+  font-weight: 400;
+}
+
+/* 为大项目（父任务）添加粗体 */
+.gantt-task-info[data-parent="true"] {
+  font-weight: 600;
+}
+
+.gantt-task-bar {
+  background-color: var(--bar-color);
+  /* ... existing code ... */
+}
+
+.gantt-milestone {
+  background-color: var(--milestone-color);
+  /* ... existing code ... */
+}
+
+/* ... existing code ... */
